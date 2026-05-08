@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flick Kick Football - Swipe, Curve & Score!</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #F0F4F8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 50%, #40916c 100%);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px 48px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        .hero h1 span { color: #95d5b2; }
+        .hero .subtitle {
+            font-size: 20px;
+            color: #b7e4c7;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #d8f3dc;
+        }
+
+        .screenshots-section {
+            padding: 48px 20px;
+            text-align: center;
+        }
+        .screenshots-section h2 {
+            font-size: 28px;
+            color: #1a472a;
+            margin-bottom: 32px;
+        }
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .screenshot-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .screenshot-card:hover { transform: translateY(-4px); }
+        .screenshot-card img {
+            width: 100%;
+            display: block;
+        }
+        .screenshot-card .label {
+            padding: 10px 14px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .features-section {
+            padding: 48px 20px;
+            background: #fff;
+        }
+        .features-section .inner {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .features-section h2 {
+            font-size: 28px;
+            color: #1a472a;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        @media (max-width: 600px) {
+            .features-grid { grid-template-columns: 1fr; }
+        }
+        .feature-item {
+            background: #f8fdf9;
+            border: 1px solid #e8f5e9;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .feature-item h3 {
+            color: #2d6a4f;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        .feature-item p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .description-section {
+            padding: 48px 20px;
+        }
+        .description-section .inner {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .description-section h2 {
+            font-size: 24px;
+            color: #1a472a;
+            margin-bottom: 16px;
+        }
+        .description-section p {
+            margin-bottom: 14px;
+            color: #444;
+        }
+
+        .info-box {
+            background: #1a472a;
+            color: #fff;
+            padding: 36px 20px;
+            text-align: center;
+        }
+        .info-box h3 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: #95d5b2;
+        }
+        .info-box .info-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .info-box .info-item {
+            text-align: center;
+        }
+        .info-box .info-item strong {
+            display: block;
+            color: #95d5b2;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        .info-box .info-item span {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Flick Kick <span>Football</span></h1>
+        <p class="subtitle">Swipe to Shoot. Curve to Score. Master the Pitch.</p>
+        <div class="badge">50 Levels of Free Kick Challenges</div>
+    </div>
+
+    <div class="screenshots-section">
+        <h2>Gameplay</h2>
+        <div class="screenshots-grid">
+            <div class="screenshot-card">
+                <img src="screenshots_65/01_menu.png" alt="Main Menu">
+                <div class="label">Main Menu</div>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots_65/02_level_select.png" alt="Level Select">
+                <div class="label">Level Select</div>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots_65/03_gameplay.png" alt="Gameplay">
+                <div class="label">Free Kick Action</div>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots_65/04_goal.png" alt="Goal Scored">
+                <div class="label">Goal Celebration</div>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots_65/05_gameover.png" alt="Game Results">
+                <div class="label">Match Results</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-section">
+        <div class="inner">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Realistic Physics</h3>
+                    <p>Swipe to control power, direction, and curve. Feel the ball bend around the wall.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>50 Progressive Levels</h3>
+                    <p>From easy warm-ups to expert challenges. Master each stage to earn 3 stars.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Dynamic Difficulty</h3>
+                    <p>Face faster goalkeepers, narrower targets, defensive walls, and crosswind effects.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>5 Difficulty Tiers</h3>
+                    <p>Tutorial, Intermediate, Skilled, Expert, and Master. How far can you go?</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Immersive Sound</h3>
+                    <p>Kick, goal, whistle, and crowd sounds bring the stadium to life.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>100% Offline</h3>
+                    <p>No ads, no in-app purchases, no internet required. Pure football fun.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="description-section">
+        <div class="inner">
+            <h2>About the Game</h2>
+            <p>Flick Kick Football puts you in the boots of a free kick specialist. Master the art of swiping to control your shot's power, direction, and spin as you curve the ball past defensive walls and outsmart agile goalkeepers.</p>
+            <p>With 50 carefully designed levels across 5 difficulty tiers, every free kick is a unique puzzle. Early levels teach you the basics, while later stages introduce wind effects, taller walls, and lightning-fast keepers that demand pinpoint accuracy.</p>
+            <p>Earn up to 3 stars per level based on your performance. Can you achieve a perfect score across all 50 challenges? Whether you have 30 seconds or 30 minutes, Flick Kick Football delivers satisfying, pick-up-and-play football action.</p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <h3>App Information</h3>
+        <div class="info-grid">
+            <div class="info-item">
+                <strong>Genre</strong>
+                <span>Sports / Casual</span>
+            </div>
+            <div class="info-item">
+                <strong>Compatibility</strong>
+                <span>iOS 13.0+</span>
+            </div>
+            <div class="info-item">
+                <strong>Age Rating</strong>
+                <span>4+</span>
+            </div>
+            <div class="info-item">
+                <strong>Size</strong>
+                <span>Lightweight</span>
+            </div>
+            <div class="info-item">
+                <strong>Languages</strong>
+                <span>English</span>
+            </div>
+            <div class="info-item">
+                <strong>Privacy</strong>
+                <span>No Data Collection</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
